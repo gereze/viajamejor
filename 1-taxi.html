@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" /> 
+<link rel="shortcut icon" href="imgs/logo_mini.ico">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+  <footer class="page-footer grey">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12 center">
+          <img src="./imgs/logo.png" style="width: 60%"/>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="num_disco" type="text" class="validate">
+          <label for="num_disco">Nº Disco</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="num_patente" type="text" class="validate">
+          <label for="num_patente">Nº Patente</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="conductor" type="text" class="validate">
+          <label for="conductor">Conductor</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="fecha" type="text" class="validate datepicker">
+          <label for="fecha">Fecha</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="hora" type="text" class="validate timepicker">
+          <label for="hora">Hora</label>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn orange lighten-1 right" href="2-calificacion.html">Siguiente<i class="material-icons right">keyboard_arrow_right</i></a>
+
+    </form>
+  </div>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+  <script>
+
+ inter_es = {
+        cancel: 'Cancelar',
+        clear: 'Limpiar',
+        done:    'Ok',
+        previousMonth:    '‹',
+        nextMonth:    '›',
+        months:    [
+            'Enero',
+            'Febrero',
+            'Marzo',
+            'Abril',
+            'Mayo',
+            'Junio',
+            'Julio',
+            'Agosto',
+            'Septiembre',
+            'Octubre',
+            'Noviembre',
+            'Diciembre'
+        ],
+        monthsShort:    [
+            'Ene',
+            'Feb',
+            'Mar',
+            'Abr',
+            'May',
+            'Jun',
+            'Jul',
+            'Ago',
+            'Sep',
+            'Oct',
+            'Nov',
+            'Dic'
+        ],
+
+        weekdays:    [
+            'Domingo',
+            'Lunes',
+            'Martes',
+            'Miercoles',
+            'Jueves',
+            'Viernes',
+            'Sábado'
+        ],
+
+        weekdaysShort:    [
+            'Dom',
+            'Lun',
+            'Mar',
+            'Mie',
+            'Jue',
+            'Vie',
+            'Sáb'
+        ],
+
+        weekdaysAbbrev:    ['D', 'L', 'M', 'M', 'J', 'V', 'S']
+
+    };
+
+    var options = {
+        i18n: inter_es,
+		  format: 'dd/mm/yyyy',
+		twelveHour: false
+    };
+
+	  $(document).ready(function(){
+		$('.datepicker').datepicker(options);
+	   });
+	   
+	    $(document).ready(function(){
+			$('.timepicker').timepicker(options);
+		  });	
+     
+  </script>
+</body>
+
+</html>
